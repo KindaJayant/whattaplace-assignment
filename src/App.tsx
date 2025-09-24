@@ -9,8 +9,7 @@ import './App.css';
 function App() {
   const [allPlaces] = useState<Place[]>(mockPlaces);
   const [filteredPlaces, setFilteredPlaces] = useState<Place[]>(allPlaces);
-
-  // State for the three dropdown filters
+  
   const [locationFilter, setLocationFilter] = useState('');
   const [priceFilter, setPriceFilter] = useState('');
   const [activityFilter, setActivityFilter] = useState('');

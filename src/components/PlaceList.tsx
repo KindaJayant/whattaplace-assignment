@@ -1,4 +1,4 @@
-// src/components/PlaceList.tsx
+
 import React from 'react';
 import type { Place } from '../types/place';
 import PlaceCard from './PlaceCard';

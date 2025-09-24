@@ -24,7 +24,6 @@ const Filters: React.FC<FiltersProps> = ({ onLocationChange, onPriceChange, onAc
   const handleIconClick = (activityName: string) => {
     setActiveIcon(activityName);
     const filterValue = activityName === 'All Spaces' ? '' : activityName;
-    // Note: This controls the same state as the dropdown. They will work together.
     onActivityChange(filterValue);
   };
 

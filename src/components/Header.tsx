@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import './Header.css';
-import { FaBars, FaTimes } from 'react-icons/fa'; // Import hamburger and close icons
+import { FaBars, FaTimes } from 'react-icons/fa'; 
 
 const Header: React.FC = () => {
   const [prevScrollPos, setPrevScrollPos] = useState(0);
   const [visible, setVisible] = useState(true);
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false); // State for mobile menu
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false); 
 
   const toggleMobileMenu = () => setIsMobileMenuOpen(!isMobileMenuOpen);
   const closeMobileMenu = () => setIsMobileMenuOpen(false);

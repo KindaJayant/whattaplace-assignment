@@ -23,7 +23,7 @@
   height: 80px;
   width: 100%;
   max-width: 1400px;
-  padding: 0 1.5rem; /* Reduced padding for mobile */
+  padding: 0 1.5rem; 
 }
 
 .navbar-left, .navbar-right {
@@ -86,7 +86,6 @@
 }
 
 
-/* -- Initial Mobile Styles (Hidden on Desktop) -- */
 .mobile-menu-icon {
   display: none;
 }
@@ -96,15 +95,12 @@
 }
 
 
-/* -- Responsive Styles for Mobile and Tablet -- */
 @media screen and (max-width: 960px) {
-  /* Hide the desktop menu links and button */
   .navbar-center,
   .navbar-right .nav-button {
     display: none;
   }
 
-  /* Show the hamburger icon */
   .mobile-menu-icon {
     display: block;
     font-size: 1.8rem;
@@ -112,7 +108,7 @@
     color: #1a202c;
   }
 
-  /* Styles for the mobile dropdown menu itself */
+
   .mobile-menu {
     display: flex;
     flex-direction: column;
@@ -120,8 +116,8 @@
     justify-content: center;
     width: 100%;
     position: absolute;
-    top: 80px; /* Position it directly below the navbar */
-    left: -100%; /* Start off-screen */
+    top: 80px; 
+    left: -100%; 
     opacity: 0;
     transition: all 0.5s ease;
     background: white;
@@ -131,7 +127,7 @@
   }
 
   .mobile-menu.active {
-    left: 0; /* Slide into view */
+    left: 0;
     opacity: 1;
   }
 
@@ -145,7 +141,6 @@
     font-size: 1.5rem;
   }
   
-  /* Show the 'Get in Touch' button inside the mobile menu */
   .mobile-menu .nav-button.mobile {
       display: block;
       width: 80%;

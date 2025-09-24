@@ -19,7 +19,7 @@
   font-size: 3.75rem;
   font-weight: 800;
   margin: 0 0 0.5rem 0;
-  color: #111827; /* Corrected to black/dark gray */
+  color: #000000; 
 }
 
 .page-header p {
@@ -30,11 +30,11 @@
 
 @media screen and (max-width: 768px) {
   .page-header h1 {
-    font-size: 2.5rem; /* Reduce heading size on mobile */
+    font-size: 2.5rem; 
   }
 
   .page-header p {
-    font-size: 1rem; /* Reduce subtitle size */
+    font-size: 1rem; 
   }
 
   .main-content {
