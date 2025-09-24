@@ -1,0 +1,155 @@
+.navbar {
+  background: white;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  border-bottom: 1px solid #f2f2f2;
+  transition: top 0.3s ease-in-out;
+}
+
+.navbar--hidden {
+  top: -80px;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  width: 100%;
+  max-width: 1400px;
+  padding: 0 1.5rem; /* Reduced padding for mobile */
+}
+
+.navbar-left, .navbar-right {
+  flex: 1;
+}
+
+.navbar-right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.navbar-center {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar-logo {
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: #1a202c;
+  cursor: pointer;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  text-align: center;
+  gap: 2rem;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-link {
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease-in-out;
+}
+
+.nav-link:hover {
+  color: var(--whattaplace-purple);
+}
+
+.nav-button {
+  padding: 0.75rem 1.5rem;
+  border-radius: 9999px;
+  background-color: var(--whattaplace-purple);
+  color: white;
+  border: none;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.nav-button:hover {
+  background-color: #4338ca;
+}
+
+
+/* -- Initial Mobile Styles (Hidden on Desktop) -- */
+.mobile-menu-icon {
+  display: none;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+
+/* -- Responsive Styles for Mobile and Tablet -- */
+@media screen and (max-width: 960px) {
+  /* Hide the desktop menu links and button */
+  .navbar-center,
+  .navbar-right .nav-button {
+    display: none;
+  }
+
+  /* Show the hamburger icon */
+  .mobile-menu-icon {
+    display: block;
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: #1a202c;
+  }
+
+  /* Styles for the mobile dropdown menu itself */
+  .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: absolute;
+    top: 80px; /* Position it directly below the navbar */
+    left: -100%; /* Start off-screen */
+    opacity: 0;
+    transition: all 0.5s ease;
+    background: white;
+    list-style: none;
+    padding: 2rem 0;
+    border-bottom: 1px solid #f2f2f2;
+  }
+
+  .mobile-menu.active {
+    left: 0; /* Slide into view */
+    opacity: 1;
+  }
+
+  .mobile-menu .nav-item {
+    padding: 1.5rem 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .mobile-menu .nav-link {
+    font-size: 1.5rem;
+  }
+  
+  /* Show the 'Get in Touch' button inside the mobile menu */
+  .mobile-menu .nav-button.mobile {
+      display: block;
+      width: 80%;
+      margin: 0 auto;
+  }
+}
+

@@ -1,0 +1,32 @@
+/* src/components/PlaceList.css - Corrected for Full Width */
+.place-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 2.5rem;
+  /* Use the full width with padding */
+  padding: 0 2rem 2rem 2rem;
+  max-width: 1400px; /* Set a max-width for very large screens */
+  margin: 0 auto; /* Center the grid */
+}
+
+/* Enforce 3 columns on larger screens, like the original */
+@media (min-width: 1200px) {
+  .place-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.no-results {
+  grid-column: 1 / -1;
+  text-align: center;
+  font-size: 1.2rem;
+  color: #888;
+  padding: 4rem 0;
+}
+@media screen and (max-width: 768px) {
+  .place-list {
+    grid-template-columns: 1fr; /* Single column layout */
+    padding: 0 1rem 2rem 1rem; /* Adjust padding for mobile */
+    gap: 1.5rem;
+  }
+}
