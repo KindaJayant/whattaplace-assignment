@@ -54,7 +54,7 @@ It is a fully responsive web application developed with **React** and **TypeScri
 1. **Clone the repository**
    ```bash
    git clone https://github.com/KindaJayant/whattaplace-assignment.git
-````
+``
 
 2. **Navigate to the project directory**
 
