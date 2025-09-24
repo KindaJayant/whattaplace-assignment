@@ -1,73 +1,99 @@
-# React + TypeScript + Vite
+# Whattaplace - SDE Intern Assignment
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a high-fidelity replica of the **Whattaplace "All Spaces" search page**, built as part of the **SDE Intern Front End assignment**.  
+It is a fully responsive web application developed with **React** and **TypeScript**, designed to showcase clean code principles, reusable components, and a keen eye for design details.
 
-Currently, two official plugins are available:
+🔗 **Live Demo**: [whattaplace-assignment](https://whattaplace-assignment-chi.vercel.app/)
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📸 Screenshots
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/f866ce02-b99b-4e3a-be00-4e9717bc7ba5" />
+---
 
-## React Compiler
+## ✨ Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Dynamic Search Page**  
+  Fetches and displays a grid of unique spaces from mock data.
 
-## Expanding the ESLint configuration
+- **Multi-Filter System**  
+  Users can filter the displayed spaces based on:
+  - 📍 **Location** (Dropdown)  
+  - 🎉 **Activity** (Dropdown & Icon Bar)  
+  - 💰 **Price Range** (Dropdown)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **Fully Responsive Design**
+  - Collapsing "Hamburger" menu for mobile navigation.
+  - Horizontally-scrollable icon bar on smaller screens.
+  - Adaptive grid layout (1 column on mobile → 3 columns on desktop).
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- **Advanced UI/UX Enhancements (Bonus Points)**
+  - **Hiding Navbar**: Elegantly hides on scroll-down, reappears on scroll-up.
+  - **Smooth CSS Animations**: Subtle hover effects with gentle image zoom.
+  - **Reusable Components**: Clean, maintainable, and scalable React structure.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## 🛠 Tech Stack
+
+- **Framework**: React 18  
+- **Language**: TypeScript  
+- **Build Tool**: Vite  
+- **Styling**: CSS3 (Flexbox & Grid for responsiveness)  
+- **Icons**: React Icons  
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+- [Node.js](https://nodejs.org/) (v18 or later recommended)  
+- npm or yarn
+
+### Installation
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/KindaJayant/whattaplace-assignment.git
+``
+
+2. **Navigate to the project directory**
+
+   ```bash
+   cd whattaplace-assignment
+   ```
+
+3. **Install dependencies**
+
+   ```bash
+   npm install
+   ```
+
+4. **Start the development server**
+
+   ```bash
+   npm run dev
+   ```
+
+   The application will be available at:
+   👉 [http://localhost:5173](http://localhost:5173)
+
+---
+
+## 📦 Building for Production
+
+To create an optimized production build, run:
+
+```bash
+npm run build
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+This will generate a `dist` folder with compiled assets, ready for deployment.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+---
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 🙌 Acknowledgment
+
+This project was a fantastic opportunity to build a modern, responsive front-end application from scratch.
+Thank you for the assignment!
+
+
